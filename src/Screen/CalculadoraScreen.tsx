@@ -8,15 +8,37 @@ const CalculadoraScreen = () => {
         <View style={styles.calculadoraContainer}>
             <Text style={styles.resultadoPequeno}>1,500.00</Text>
             <Text style={styles.resultado}>1,500.00</Text>
-            <View style={styles.fila}>
 
+            {/* fila de botones */}
+            <View style={styles.fila}>
                 <BotonCalc color="#9B9B9B" texto="C" />
-                <BotonCalc texto="+/-" />
+                <BotonCalc color="#9B9B9B" texto="+/-" />
                 <BotonCalc color="#9B9B9B" texto="del" />
                 <BotonCalc color="#FF9427" texto="/" />
-
             </View>
-
+            <View style={styles.fila}>
+                <BotonCalc texto="7" />
+                <BotonCalc texto="8" />
+                <BotonCalc texto="9" />
+                <BotonCalc color="#FF9427" texto="x" />
+            </View>
+            <View style={styles.fila}>
+                <BotonCalc texto="4" />
+                <BotonCalc texto="5" />
+                <BotonCalc texto="6" />
+                <BotonCalc color="#FF9427" texto="-" />
+            </View>
+            <View style={styles.fila}>
+                <BotonCalc texto="1" />
+                <BotonCalc texto="2" />
+                <BotonCalc texto="3" />
+                <BotonCalc color="#FF9427" texto="+" />
+            </View>
+            <View style={styles.fila}>
+                <BotonCalc texto="C" ancho={true}/>
+                <BotonCalc texto="+/-" />
+                <BotonCalc color="#FF9427" texto="=" />
+            </View>
         </View>
     )
 }
