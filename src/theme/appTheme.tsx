@@ -12,12 +12,12 @@ export const styles = StyleSheet.create({
         flex: 1,
         paddingHorizontal: 20,
         backgroundColor: "black",
-        justifyContent: "flex-end"
-    },
+        justifyContent: "flex-end",
+    }, 
     resultado: {
         color: "white",
         fontSize: 60,
-        textAlign: 'right'
+        textAlign: 'right',
     },
     resultadoPequeno: {
         color: "white",
